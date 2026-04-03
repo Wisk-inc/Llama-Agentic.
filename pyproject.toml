@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llama-agentic"
+version = "1.0.0"
+description = "A terminal-based AI coding agent in Python"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "rich",
+    "prompt_toolkit",
+    "httpx",
+    "aiohttp",
+    "anthropic",
+    "google-generativeai",
+    "tiktoken",
+    "pygments",
+    "typer"
+]
+
+[project.scripts]
+la = "main:main"
+llama-agentic = "main:main"
